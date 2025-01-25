@@ -30,7 +30,7 @@ cd Llama-2-Finetuning-GSM8K
 Perplexity is used to evaluate the model's performance. It measures how well the model predicts the next word in a sequence. Lower perplexity indicates better performance.
 
 $$
-\text{Perplexity} = \exp\left(-\frac{1}{N}\sum_{i=1}^{N} \log p(x_i)\right)
+\text{**Perplexity**} = \exp\left(-\frac{1}{N}\sum_{i=1}^{N} \log p(x_i)\right)
 $$
 
  
