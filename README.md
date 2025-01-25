@@ -29,40 +29,11 @@ cd Llama-2-Finetuning-GSM8K
 **1. Perplexity Calculation**
 Perplexity is used to evaluate the model's performance. It measures how well the model predicts the next word in a sequence. Lower perplexity indicates better performance.
 
-Perplexity
-=
-exp
-⁡
-(
-−
-1
-N
-∑
-i
-=
-1
-N
-log
-⁡
-p
-(
-x
-i
-)
-)
-Perplexity=exp(− 
-N
-1
-​
-  
-i=1
-∑
-N
-​
- logp(x 
-i
-​
- ))
+$$
+\text{Perplexity} = \exp\left(-\frac{1}{N}\sum_{i=1}^{N} \log p(x_i)\right)
+$$
+
+ 
 **2. Gradient Accumulation**
 To handle memory constraints, gradient accumulation is used. This allows the model to process smaller batches and accumulate gradients over multiple steps before updating the model weights.
 
